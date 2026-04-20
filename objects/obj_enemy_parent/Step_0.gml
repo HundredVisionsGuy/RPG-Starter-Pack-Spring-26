@@ -1,4 +1,6 @@
+// If alarm is active (not yet reached 0)
 if (alarm[1] >= 0) {
+    // keep moving in the direction of the knockback
     target_x = x + kb_x;
     target_y = y + kb_y;
 }
