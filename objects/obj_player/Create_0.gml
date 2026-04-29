@@ -8,3 +8,5 @@ hp_total = hp;
 damage = 1;
 
 facing = 0;
+can_shoot = true;
+fireball_ammo = 4;

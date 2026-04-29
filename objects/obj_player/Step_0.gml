@@ -30,3 +30,14 @@ if (keyboard_check_pressed(vk_space)) {
     _inst.image_angle = facing;
     _inst.damage *= damage;
 }
+
+// Shooting fireball - only if alarm has not yet been set
+if (keyboard_check_pressed(ord("E"))) {
+    if (can_shoot and fireball_ammo > 0) {
+        var _fireball = instance_create_depth(x, y, 0, obj_fireball);
+        can_shoot = false;
+        fireball_ammo -= 1;
+        alarm[1] = 20;
+    }
+}
+    
