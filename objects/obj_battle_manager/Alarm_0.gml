@@ -5,4 +5,6 @@ if (check_for_end()) {
 }
 else {
     alarm[1] = 60;
+    
+    obj_battle_enemy.alarm[0] = 30;
 }
